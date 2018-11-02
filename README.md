@@ -15,3 +15,14 @@ GitHub to Eclipse
 6 use git repository url for location
 
 ex. C:\Users\CAE-USER\git\ClassPracticeRepository\.git
+
+
+Eclipse to GitHub
+
+1 Right click LA5 package
+
+2 Team -> Commit
+
+3 Move all unstaged changes to staged(select + ctrl a)
+
+4 Write commit msg -> commit and push
