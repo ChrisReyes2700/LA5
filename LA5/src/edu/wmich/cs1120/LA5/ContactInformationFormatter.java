@@ -11,6 +11,7 @@ public class ContactInformationFormatter implements IContactInformationFormatter
 			formatContactInformation(filePaths[i]);
 		}
 	}
+	
 
 	public void formatContactInformation(String fileName) {
 		try {
