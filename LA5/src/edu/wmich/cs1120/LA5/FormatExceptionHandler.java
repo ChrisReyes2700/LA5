@@ -6,20 +6,18 @@ public class FormatExceptionHandler implements IFormatExceptionHandler{
 	
 	
 	public void handleFileNotFoundException(FileNotFoundException e) {
-		System.out.print("File not found.");
+		System.out.println(e.getMessage());
 	}
 	
 	public void handlePhoneNumberFormatException(PhoneNumberFormatException e) {
 		String phoneNumber = e.getPhoneNumber();
 		phoneNumber = phoneNumber.replaceAll("[^0-9.]", ""); // Removes any non number characters
-		//phoneNumber = phoneNumber.replaceFirst("(\\d{3})(\\d{3})(\\d4)", "($1)-$2-$3"); // Formats it into phone #
-		
-		//placeholder code, idk how the one on top works
+
 		System.out.print("(");
 		for(int i = 0; i < 3; i++) {
 			System.out.print(phoneNumber.charAt(i));
 		}
-		System.out.print(")");
+		System.out.print(")-");
 		for(int i = 3; i < 6; i++) {
 			System.out.print(phoneNumber.charAt(i));
 		}
@@ -32,7 +30,7 @@ public class FormatExceptionHandler implements IFormatExceptionHandler{
 	
 	public void handleEmailFormatException(EmailAddressFormatException e) {
 		String email = e.getEmail();
-		System.out.print(email.toLowerCase());
+		System.out.println(email.toLowerCase());
 	}
 
 	public void handleNameFormatException(NameFormatException e) {

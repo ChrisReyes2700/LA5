@@ -27,7 +27,7 @@ public class ContactInformationFormatter implements IContactInformationFormatter
 			scan.close();
 		} catch (EmailAddressFormatException | PhoneNumberFormatException | NameFormatException
 				| FileNotFoundException e) {
-			e.printStackTrace();
+			f.handleFileNotFoundException((FileNotFoundException) e);
 		}
 
 	}
