@@ -1,5 +1,7 @@
 # LA5
 
+Authors: Austin W, Chris R
+
 GitHub to Eclipse
 
 1 copy git url in download button
