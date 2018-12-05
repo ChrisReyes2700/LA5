@@ -1,6 +1,6 @@
 # LA5
 
-Authors: Austin W, Chris R
+Authors: Austin Wojciechowski, Chris Reyes
 
 GitHub to Eclipse
 
